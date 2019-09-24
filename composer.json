@@ -1,0 +1,26 @@
+{
+    "name": "mage2gen/module-bloggraphql",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
+            "name": "Lewis Voncken",
+            "email": "lewis@experius.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mage2gen\\BlogGraphQl\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

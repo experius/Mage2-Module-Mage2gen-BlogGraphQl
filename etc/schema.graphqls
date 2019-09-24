@@ -1,0 +1,20 @@
+
+enum UrlRewriteEntityTypeEnum {
+    BLOG_POST_PAGE
+}
+
+type Query {
+
+    post (
+        post_id: String @doc(description: "Query by post_id.")
+    ) : Post @resolver( class: "Mage2gen\\BlogGraphQl\\Model\\Resolver\\Post") @doc(description: "Query by Retrieve Blog Post Information.") ,
+}
+
+type Post {
+
+    post_id  : String  @doc(description: "Query by post_id.") ,
+    title  : String  @doc(description: "Query by title.") ,
+    featured_image_file  : String  @doc(description: "Query by featured_image_file.") ,
+    content  : String  @doc(description: "Query by content.") ,
+    : String   ,
+}
